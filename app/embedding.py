@@ -2,7 +2,7 @@ from sentence_transformers import SentenceTransformer
 
 class SentenceTransformerEmbeddingFunction:
     def __init__(self):
-        # Load the SentenceTransformer model
+        # Load all-MiniLM-L6-v2 Embedding model
         self.model = SentenceTransformer('all-MiniLM-L6-v2')
     
     def __call__(self, input_texts):

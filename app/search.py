@@ -25,11 +25,12 @@ class SearchEngine:
         return final_response
 
     def search(self, query):
-        results = self.db.query(query, n_results=7)  # Use FAISS query
-        documents = [doc["page_content"] for doc in results]  # Flatten structure
+        results = self.db.query(query, n_results=7)  
+        documents = [doc["page_content"] for doc in results]  
         return documents
 
     def generate_response(self, query, documents):
+        print(documents)
         prompt = Prompts.get_final_answer_prompt(query, documents)
         response = self.model.generate_content(prompt)
         return response.text

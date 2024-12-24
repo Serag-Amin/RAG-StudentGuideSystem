@@ -3,7 +3,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from config import Config
 
 def load_pdf():
-    loader = PyPDFLoader(Config.PDF_PATH)  # Ensure Config.PDF_PATH is correct
+    loader = PyPDFLoader(Config.PDF_PATH)  
     return loader.load()
 
 def split_documents(pages):
