@@ -3,15 +3,13 @@ from main import initialize_system
 
 st.title("Student Guide RAG System")
 
-# Sidebar message to inform users about asking clear questions
 st.sidebar.info(
     "🔍 **Tips for best results:**\n\n"
     "- Please be clear and concise when asking your question.\n"
     "- Avoid vague or too general questions.\n"
-    "- For example, ask 'How do I apply for scholarships?' instead of just 'Tell me about scholarships.'"
+    "- If you don't get a response, try rephrasing your question."
 )
 
-# Sidebar message about the app being under development
 st.sidebar.warning("⚠️ This app is still under development. Expect updates and improvements!")
 
 def get_search_engine():

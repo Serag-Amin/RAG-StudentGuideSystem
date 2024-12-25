@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+import streamlit as st
 
 load_dotenv()
 
@@ -9,4 +10,4 @@ class Config:
     CHUNK_OVERLAP = 75
     DB_NAME = "vectdb"
     N_RESULTS = 5
-    GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "default-api-key")  
+    GOOGLE_API_KEY = st.secrets.get("GOOGLE_API_KEY", "No API key found")
