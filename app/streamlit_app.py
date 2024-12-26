@@ -7,7 +7,7 @@ st.sidebar.info(
     "🔍 **Tips for best results:**\n\n"
     "- Please be clear and concise when asking your question.\n"
     "- Avoid vague or too general questions.\n"
-    "- If you don't get a response, try rephrasing your question."
+    "- If you don't get your desired response, try rephrasing your question."
 )
 
 st.sidebar.warning("⚠️ This app is still under development. Expect updates and improvements!")
