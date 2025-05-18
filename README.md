@@ -21,7 +21,7 @@ A Retrieval-Augmented Generation (RAG) system that provides students and faculty
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/RAG-StudentGuideSystem.git
+git clone https://github.com/Serag-Amin/RAG-StudentGuideSystem.git
 cd RAG-StudentGuideSystem
 ```
 
